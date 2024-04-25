@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     'localhost',  # Para entornos locales
     '127.0.0.1',  # Para entornos locales
     os.getenv('HOST_BACK'),  # Tu host válido
+    'cartaastral-back.up.railway.app',
 ]
 # Application definition
 
