@@ -1,4 +1,5 @@
 import base64
+import os
 from pathlib import Path
 
 from kerykeion import AstrologicalSubject, KerykeionChartSVG, Report
@@ -24,7 +25,7 @@ class ProcessData:
         setup_logging(level="debug")
         # Args: Name, year, month, day, hour, minuts, city
         _object = AstrologicalSubject(name, int(fecha[0]), int(fecha[1]), int(fecha[2]), int(hora[0]), int(hora[1]), city=city, lng=long, lat=latid, zodiac_type="Tropic")
-        name = KerykeionChartSVG(
+        image_svg = KerykeionChartSVG(
             _object, new_output_directory="./media"
         )
 
@@ -35,4 +36,6 @@ class ProcessData:
         print("Encoded data:", name_svg)
         print("")
 
-        name.makeSVG(name_svg)
+        image_svg.makeSVG()
+        os.rename(f'./media/{name}NatalChart.svg', f'./media/{name_svg}.svg')
+    
