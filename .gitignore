@@ -20,6 +20,8 @@ media/
 # Archivos de configuración
 local_settings.py
 
+mydatabase
+
 # Si usas Docker
 .dockerignore
 .env
