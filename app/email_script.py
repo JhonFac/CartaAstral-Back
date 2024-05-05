@@ -24,6 +24,7 @@ class EmailSender:
 
         to_email = email
         subject = "Carta Astral"
+        url_image = str(self.url)+str(name_svg)
         body = f"""
         <head>
             <meta charset="UTF-8">
@@ -36,8 +37,11 @@ class EmailSender:
                     <p>Sé que ha tardado un poco. Siento haberte hecho esperar.</p>
                     <p>He preparado tu carta natal.</p>
                     <p>Puedes hacer clic en el siguiente enlace para acceder a tu carta natal, que te ayudará a entenderte aún mejor.</p>
-                    <a href="<a href="{self.url+str(name_svg)}" style="text-decoration:none;">">Ver Carta Astral</a>
-                    <a href="{self.url + str(name_svg)}" style="text-decoration:none;">
+                    <a href="<a href="{url_image}" style="text-decoration:none;">">Ver Carta Astral</a>
+                    <a href="{url_image}" style="text-decoration:none;">
+                        <button style="background-color:blue; color:white; padding:10px; border:none; border-radius:5px; text-decoration:none;">Ver Carta Astral</button>
+                    </a>
+                    <a href="https://elresultadodelaloteria.com/" style="text-decoration:none;">
                         <button style="background-color:blue; color:white; padding:10px; border:none; border-radius:5px; text-decoration:none;">Ver Carta Astral</button>
                     </a>
                     <p>Por último, enviaré otro correo electrónico dentro de un rato. Este correo electrónico contendrá información sobre mi servicio de consulta astrológica que se proporcionará mientras dure tu suscripción.</p>
