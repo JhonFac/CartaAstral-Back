@@ -5,5 +5,7 @@ services:
         build: .
         ports:
             - "8080:8000"
+        volumes:
+            - ./media:./media
         env_file:
             - .env
