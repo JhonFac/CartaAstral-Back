@@ -161,7 +161,3 @@ STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 # Para archivos estáticos como CSS, JS, etc.
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-# Para archivos subidos por el usuario
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
