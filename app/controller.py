@@ -26,7 +26,7 @@ class ProcessData:
         # Args: Name, year, month, day, hour, minuts, city
         _object = AstrologicalSubject(name, int(fecha[0]), int(fecha[1]), int(fecha[2]), int(hora[0]), int(hora[1]), city=city, lng=long, lat=latid, zodiac_type="Tropic")
         image_svg = KerykeionChartSVG(
-            _object, new_output_directory="./media"
+            _object, new_output_directory="./static"
         )
 
         data_to_encode = f"{id}-{email}"
