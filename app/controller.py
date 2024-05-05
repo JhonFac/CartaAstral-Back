@@ -37,5 +37,5 @@ class ProcessData:
         print("")
 
         image_svg.makeSVG()
-        os.rename(f'./media/{name}NatalChart.svg', f'./media/{name_svg}.svg')
+        os.rename(f'./static/{name}NatalChart.svg', f'./static/{name_svg}.svg')
     
