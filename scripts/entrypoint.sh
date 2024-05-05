@@ -5,11 +5,6 @@ set -e
 echo "Contenedor iniciado"
 echo "$(date): Ejecutando proceso"
 
-# Obtener la dirección IP interna del contenedor
-CONTAINER_IP=$(hostname -I | awk '{print $1}')
-
-echo "La dirección IP del contenedor es: $CONTAINER_IP"
-
 python manage.py collectstatic --noinput
 python manage.py makemigrations
 python manage.py migrate
