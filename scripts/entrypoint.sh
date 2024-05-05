@@ -10,7 +10,7 @@ CONTAINER_IP=$(hostname -I | awk '{print $1}')
 
 echo "La dirección IP del contenedor es: $CONTAINER_IP"
 
-python manage.py collectsatic
+python manage.py collectstatic
 python manage.py makemigrations
 python manage.py migrate
 # python manage.py runserver 0.0.0.0:8000
