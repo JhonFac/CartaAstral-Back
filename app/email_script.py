@@ -36,8 +36,9 @@ class EmailSender:
                     <p>Sé que ha tardado un poco. Siento haberte hecho esperar.</p>
                     <p>He preparado tu carta natal.</p>
                     <p>Puedes hacer clic en el siguiente enlace para acceder a tu carta natal, que te ayudará a entenderte aún mejor.</p>
-                    <a href="{self.url+str(name_svg)}" style="text-decoration:none;">
-                        <button style="background-color:blue; color:white; padding:10px; border:none; border-radius:5px;">Ver Carta Astral</button>
+                    <a href="<a href="{self.url+str(name_svg)}" style="text-decoration:none;">">Ver Carta Astral</a>
+                    <a href="{self.url + str(name_svg)}" style="text-decoration:none;">
+                        <button style="background-color:blue; color:white; padding:10px; border:none; border-radius:5px; text-decoration:none;">Ver Carta Astral</button>
                     </a>
                     <p>Por último, enviaré otro correo electrónico dentro de un rato. Este correo electrónico contendrá información sobre mi servicio de consulta astrológica que se proporcionará mientras dure tu suscripción.</p>
                     <p>Si tienes algún problema, no dudes en ponerte en contacto con nosotros en <a href="https://elresultadodelaloteria.com/">support@elresultadodelaloteria.com</a>.</p>
