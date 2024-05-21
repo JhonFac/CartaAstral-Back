@@ -29,7 +29,7 @@ class EmailSender:
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
-        <body>
+        <body style="background-image: url('./images/fondo.jpg');">
             <div class="container">
                 <div class="content">
                     <h1>Hola { name }</h1>
